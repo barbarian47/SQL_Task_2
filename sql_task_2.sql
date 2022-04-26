@@ -6,7 +6,7 @@ create table if not exists Performers (
 create table if not exists Albums (
 	id serial primary key,
 	Title varchar(80) not null,
-	Date date,
+	Year integer not null,
 	PerformerID integer references Performers(id)
 );
 
