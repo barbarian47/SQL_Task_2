@@ -13,7 +13,7 @@ create table if not exists Albums (
 create table if not exists Tracks (
 	id serial primary key,
 	Title varchar(80) not null,
-	Duration varchar(8),
+	Duration integer not null,
 	AlbumID integer references Albums(id)
 );
 
